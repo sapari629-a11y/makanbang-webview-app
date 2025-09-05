@@ -1,0 +1,19 @@
+# Extract project dari ZIP
+unzip makanbang_android_app_with_ci.zip -d makanbang_app
+
+# Masuk ke folder project
+cd makanbang_app
+
+# Inisialisasi git
+git init
+git add .
+git commit -m "Initial commit - MakanBang WebView app"
+
+# Ganti main branch
+git branch -M main
+
+# Tambahkan remote ke repo GitHub yang baru
+git remote add origin https://github.com/<username>/makanbang-webview-app.git
+
+# Push ke GitHub
+git push -u origin main
